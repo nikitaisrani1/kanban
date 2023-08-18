@@ -1,0 +1,99 @@
+
+.number{
+    color: grey;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    width: 300px;
+    height:300px;
+    margin-left: 50px;
+    border-radius: 10px;
+    
+}
+.headeruser {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #F4F4F9;
+}
+.name{
+    margin-left:10px;
+    /* margin-left:30px; */
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.info,.icons{
+    display:flex;
+}
+.icons{
+    margin-top: 12px;
+    color:grey;
+}
+.task{
+
+}
+.circle-checkbox {
+        /* margin-left: 30px; */
+        margin-top:10px;
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hidden-checkbox {
+    /* margin-left: 30px; */
+    display: none;
+}
+.cam{
+    /* margin-left: 30px; */
+    font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+}
+.custom-checkbox {
+        /* margin-left: 30px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.hidden-checkbox:checked+.custom-checkbox {
+    /* margin-left: 30px; */
+    background-color: grey;
+}
+.totick{
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.network
+{
+    margin-top: 10px;
+    color:grey;
+}
+.circle{
+    margin-left:30px;
+    font-size: 12px;
+}
+.fr{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+.task{
+    background-color: white;
+    padding:10px;
+    border-radius: 10px;
+}
