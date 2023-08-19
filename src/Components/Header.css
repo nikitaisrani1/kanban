@@ -16,6 +16,7 @@ justify-content: space-between ;
     padding-bottom: 20px;
 }
 .option{
+        cursor: pointer;
     display:inline-block;
     padding-left: 3px;
     font-size: 12px;
@@ -40,14 +41,16 @@ font-size: 12px;
     margin-left:20px;
     /* display: inline-block; */
     margin-top: -10px;
-    height:90px;
+    height:80px;
     border-style: solid;
         border-radius: 10px;
         border-color: rgb(203, 202, 202);
         border-width: 0.5px;
+        z-index: 2;
 
 }
 .selects {
+    cursor: pointer;
     margin-top: 10px;
     margin-right: 25px;
     border-style: solid;
@@ -70,8 +73,8 @@ font-size: 12px;
     color:grey;
     margin-left: 20px;
     font-weight: 100;
-    font-size: 12px;
-        font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
 }
 .greyArrow{
     color:grey;
@@ -90,6 +93,7 @@ font-size: 12px;
             z-index: 2;
             position: absolute;
             font-size: 12px;
+                cursor: pointer;
                 font-family: 'Roboto', sans-serif;
 }
 .options1{
@@ -108,8 +112,16 @@ font-size: 12px;
     border-radius: 5px;
     border-color: grey;
     border-width: 1px;
-    z-index: 2;
+    z-index: 2;cursor: pointer;
     position: absolute;
     font-size: 12px;
         font-family: 'Roboto', sans-serif;
+}
+.fade-in {
+    transition: opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
 }

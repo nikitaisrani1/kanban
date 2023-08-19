@@ -1,14 +1,16 @@
-
 .number{
     color: grey;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
 }
 .card{
-    width: 300px;
-    height:300px;
-    margin-left: 50px;
+    width: 250px;
+    /* height:300px; */
+    /* margin-left: 50px; */
     border-radius: 10px;
+    margin-right: 10px;
+    min-width: 250px;
+    max-width: 250px;
     
 }
 .headeruser {
@@ -20,7 +22,7 @@
 .name{
     margin-left:10px;
     /* margin-left:30px; */
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
@@ -32,7 +34,8 @@
     color:grey;
 }
 .task{
-
+margin-bottom: 20px;
+width:200px;
 }
 .circle-checkbox {
         /* margin-left: 30px; */
@@ -52,7 +55,7 @@
 }
 .cam{
     /* margin-left: 30px; */
-    font-size: 12px;
+    font-size: 11px;
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
 }
@@ -74,7 +77,7 @@
 }
 .totick{
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
 
 }
@@ -85,10 +88,10 @@
 }
 .circle{
     margin-left:30px;
-    font-size: 12px;
+    font-size: 11px;
 }
 .fr{
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
 }
@@ -96,4 +99,36 @@
     background-color: white;
     padding:10px;
     border-radius: 10px;
+-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    display: inline-block;
+}
+.inline{
+    display:flex;
+    font-size: 10px;
+}
+.group{
+    /* font-size: 12px; */
+    margin-top: -20px;
+    /* font-family: 'Roboto', sans-serif; */
+    display:block;
+    width:300px;
+    /* height: fit-content; */
+    justify-content:space-around;
+    
+}
+.title{
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+}
+.columns{
+    display: flex;
+    width: 1250px;
+    justify-content: space-between;
+    
+}
+.cancel{
+margin-left:30px;
+font-size: 9.5px;
 }

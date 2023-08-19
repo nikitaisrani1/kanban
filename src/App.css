@@ -3,3 +3,16 @@
     background-color: #F4F4F9;
     height:900px;
 }
+.fade-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left:500px;
+    margin-right: auto;
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.visible {
+    opacity: 1;
+    
+}

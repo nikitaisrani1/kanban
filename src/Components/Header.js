@@ -5,13 +5,13 @@ import { AiOutlineDown } from "react-icons/ai";
 import { TbAdjustmentsHorizontal } from "react-icons/tb";
 
 
-function Header({ select1, setSelect1, select2, setSelect2 }) {
+function Header({ select1, setSelect1, select2, setSelect2,handleFadeIn }) {
     const [showList, setShowList] = useState(false);
     const [showList1, setShowList1] = useState(false);
     const [showList2, setShowList2] = useState(false);
-    // const [select1, setSelect1] = useState("Status");
-    // const [select2, setSelect2] = useState("Priority");
-    
+    // const [select1, setSelect1] = useState("status");
+    // const [select2, setSelect2] = useState("priority");
+    const [displayText, setDisplayText] = useState('')
     return (
         <div>
             <style>
@@ -27,7 +27,7 @@ function Header({ select1, setSelect1, select2, setSelect2 }) {
             <div className="select" onClick={()=>setShowList(!showList)}>
             <div className="divs"><TbAdjustmentsHorizontal /></div>
             <div className="option">Display</div>
-                <div className="divs"><AiOutlineDown /></div>
+            <div className="divs"><AiOutlineDown /></div>
             </div>
             </div>
             {showList &&
@@ -38,7 +38,7 @@ function Header({ select1, setSelect1, select2, setSelect2 }) {
                 setShowList2(false);
             }}>
                 <div className="row" >
-                    <div className="font">Status</div>
+                    <div className="font">Grouping</div>
                         <div className="selects" onClick={() => setShowList1(!showList1)}>
                             <div>{select1}</div> 
                             <div><AiOutlineDown className="greyArrow" /></div>
@@ -56,31 +56,41 @@ function Header({ select1, setSelect1, select2, setSelect2 }) {
             }
             {showList1 &&
             <div className="popup1"> 
-                    <div className="options1" onClick={() => {setSelect1("Status");
+                    <div className="options1" onClick={() => {setSelect1("status");
                         setShowList1(false);
                     }
-            }>Status</div>
-                    <div className="options1" onClick={() => {setSelect1("User");
-                setShowList1(false)}}>User</div>
+            }>status</div>
+            
+                    <div className="options1" onClick={() => {setSelect1("user");
+                setShowList1(false)}}>user</div>
+
                     <div className="options1last" onClick={() => {
-                        if(select2!=="Priority")
-                        setSelect1("Priority")
+                        if(select2!=="priority")
+                        setSelect1("priority")
+                    else{
+                            handleFadeIn();
+                    }
                         setShowList1(false)
                     }
-                        }>Priority</div>
-
-
+                        }>Priority
+                        </div>
                </div>}
             {showList2 && <div className="popup2">
                 <div className="options1" onClick={() => {
-                    if(select1!=="Priority")
-                        setSelect2("Priority");
+                    if(select1!=="priority")
+                        setSelect2("priority");
+                    else {
+                        handleFadeIn();
+                    }
                     setShowList2(false);
                     }
-                }>Priority</div>
-                <div className="options1last" onClick={() =>{ setSelect2("Title");
-                setShowList2(false)}}>Title</div>
+                }>priority</div>
+                <div className="options1last" onClick={() =>{ setSelect2("title");
+                setShowList2(false)}}>title</div>
             </div>}
+            <div>
+      
+    </div>
         </div>
         
     );
